@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10B5BA80-E5BF-4FEE-A0F5-E72391FC06E7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>action2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>shooting</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bullet\AbstructBullet.cpp" />
+    <ClCompile Include="bullet\bulletlist\DesdragudShoot.cpp" />
+    <ClCompile Include="bullet\bulletlist\FallBomber.cpp" />
+    <ClCompile Include="bullet\bulletlist\PlayerShoot.cpp" />
+    <ClCompile Include="bullet\bulletlist\SpreadShoot.cpp" />
+    <ClCompile Include="bullet\bulletlist\StraightShoot.cpp" />
+    <ClCompile Include="bullet\BulletManager.cpp" />
+    <ClCompile Include="effect\AbstructEffect.cpp" />
+    <ClCompile Include="effect\effectlist\CallSign.cpp" />
+    <ClCompile Include="effect\effectlist\CatchBeam.cpp" />
+    <ClCompile Include="effect\effectlist\Explode.cpp" />
+    <ClCompile Include="effect\effectlist\Smoke.cpp" />
+    <ClCompile Include="effect\EffectManager.cpp" />
+    <ClCompile Include="enemy\AbstructEnemy.cpp" />
+    <ClCompile Include="enemy\enemylist\Desdragud.cpp" />
+    <ClCompile Include="enemy\enemylist\DesdragudArm.cpp" />
+    <ClCompile Include="enemy\enemylist\JumboRaidrone.cpp" />
+    <ClCompile Include="enemy\enemylist\Missile.cpp" />
+    <ClCompile Include="enemy\enemylist\Peckiller.cpp" />
+    <ClCompile Include="enemy\enemylist\Peckiller2.cpp" />
+    <ClCompile Include="enemy\enemylist\Raidrone.cpp" />
+    <ClCompile Include="enemy\enemylist\NoMove.cpp" />
+    <ClCompile Include="enemy\enemylist\Raidrone2.cpp" />
+    <ClCompile Include="enemy\enemylist\Raidrone3.cpp" />
+    <ClCompile Include="enemy\EnemyManager.cpp" />
+    <ClCompile Include="event\AbstractEvent.cpp" />
+    <ClCompile Include="event\eventlist\ClearEvent.cpp" />
+    <ClCompile Include="event\eventlist\EffectSettingEvent.cpp" />
+    <ClCompile Include="event\eventlist\EnemySettingEvent.cpp" />
+    <ClCompile Include="event\eventlist\MissEvent.cpp" />
+    <ClCompile Include="event\eventlist\PlayerMoveEvent.cpp" />
+    <ClCompile Include="event\eventlist\ScrollResetEvent.cpp" />
+    <ClCompile Include="event\eventlist\ScrollSettingEvent.cpp" />
+    <ClCompile Include="event\eventlist\PlayMusicEvent.cpp" />
+    <ClCompile Include="event\eventlist\TalkEvent.cpp" />
+    <ClCompile Include="event\eventlist\WaitBattleEvent.cpp" />
+    <ClCompile Include="event\eventlist\WaitEvent.cpp" />
+    <ClCompile Include="event\EventManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="main\Game.cpp" />
+    <ClCompile Include="main\Gameover.cpp" />
+    <ClCompile Include="main\KeyConfig.cpp" />
+    <ClCompile Include="main\Menu.cpp" />
+    <ClCompile Include="main\Mode.cpp" />
+    <ClCompile Include="main\ModeBase.cpp" />
+    <ClCompile Include="main\Opening.cpp" />
+    <ClCompile Include="main\Option.cpp" />
+    <ClCompile Include="main\Parameter.cpp" />
+    <ClCompile Include="main\System.cpp" />
+    <ClCompile Include="main\StageSelect.cpp" />
+    <ClCompile Include="map\AbstractMapChip.cpp" />
+    <ClCompile Include="map\MapChipManager.cpp" />
+    <ClCompile Include="map\mapchip\NormalBlock.cpp" />
+    <ClCompile Include="map\mapchip\Verlift.cpp" />
+    <ClCompile Include="player\Player.cpp" />
+    <ClCompile Include="single\Display.cpp" />
+    <ClCompile Include="single\Fps.cpp" />
+    <ClCompile Include="single\Image.cpp" />
+    <ClCompile Include="single\Key.cpp" />
+    <ClCompile Include="single\Sound.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bullet\AbstractBullet.h" />
+    <ClInclude Include="bullet\bulletlist\DesdragudShoot.h" />
+    <ClInclude Include="bullet\bulletlist\FallBomber.h" />
+    <ClInclude Include="bullet\bulletlist\PlayerShoot.h" />
+    <ClInclude Include="bullet\bulletlist\SpreadShoot.h" />
+    <ClInclude Include="bullet\bulletlist\StraightShoot.h" />
+    <ClInclude Include="bullet\BulletManager.h" />
+    <ClInclude Include="character\CharacterBase.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="effect\AbstractEffect.h" />
+    <ClInclude Include="effect\effectlist\CallSign.h" />
+    <ClInclude Include="effect\effectlist\CatchBeam.h" />
+    <ClInclude Include="effect\effectlist\Explode.h" />
+    <ClInclude Include="effect\effectlist\Smoke.h" />
+    <ClInclude Include="effect\EffectManager.h" />
+    <ClInclude Include="enemy\AbstractEnemy.h" />
+    <ClInclude Include="enemy\enemylist\Desdragud.h" />
+    <ClInclude Include="enemy\enemylist\DesdragudArm.h" />
+    <ClInclude Include="enemy\enemylist\JumboRaidrone.h" />
+    <ClInclude Include="enemy\enemylist\Missile.h" />
+    <ClInclude Include="enemy\enemylist\Peckiller.h" />
+    <ClInclude Include="enemy\enemylist\Peckiller2.h" />
+    <ClInclude Include="enemy\enemylist\Raidrone.h" />
+    <ClInclude Include="enemy\enemylist\NoMove.h" />
+    <ClInclude Include="enemy\enemylist\Raidrone2.h" />
+    <ClInclude Include="enemy\enemylist\Raidrone3.h" />
+    <ClInclude Include="enemy\EnemyManager.h" />
+    <ClInclude Include="event\AbstractEvent.h" />
+    <ClInclude Include="event\eventlist\ClearEvent.h" />
+    <ClInclude Include="event\eventlist\EffectSettingEvent.h" />
+    <ClInclude Include="event\eventlist\EnemySettingEvent.h" />
+    <ClInclude Include="event\eventlist\MissEvent.h" />
+    <ClInclude Include="event\eventlist\PlayerMoveEvent.h" />
+    <ClInclude Include="event\eventlist\ScrollResetEvent.h" />
+    <ClInclude Include="event\eventlist\ScrollSettingEvent.h" />
+    <ClInclude Include="event\eventlist\PlayMusicEvent.h" />
+    <ClInclude Include="event\eventlist\TalkEvent.h" />
+    <ClInclude Include="event\eventlist\WaitBattleEvent.h" />
+    <ClInclude Include="event\eventlist\WaitEvent.h" />
+    <ClInclude Include="event\EventManager.h" />
+    <ClInclude Include="main\Game.h" />
+    <ClInclude Include="main\Gameover.h" />
+    <ClInclude Include="main\KeyConfig.h" />
+    <ClInclude Include="main\Menu.h" />
+    <ClInclude Include="main\Mode.h" />
+    <ClInclude Include="main\ModeBase.h" />
+    <ClInclude Include="main\ModeChanger.h" />
+    <ClInclude Include="main\Opening.h" />
+    <ClInclude Include="main\Option.h" />
+    <ClInclude Include="main\Parameter.h" />
+    <ClInclude Include="main\StageSelect.h" />
+    <ClInclude Include="main\System.h" />
+    <ClInclude Include="map\AbstractMapChip.h" />
+    <ClInclude Include="map\MapChipManager.h" />
+    <ClInclude Include="map\mapchip\NormalBlock.h" />
+    <ClInclude Include="map\mapchip\Verlift.h" />
+    <ClInclude Include="player\Player.h" />
+    <ClInclude Include="single\Display.h" />
+    <ClInclude Include="single\Fps.h" />
+    <ClInclude Include="single\Image.h" />
+    <ClInclude Include="single\Key.h" />
+    <ClInclude Include="single\Singleton.h" />
+    <ClInclude Include="single\Sound.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

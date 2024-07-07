@@ -1,0 +1,15 @@
+0,player/body.png,1,1,32,64
+1,player/thigh.png,1,1,16,16
+2,player/leg.png,1,1,32,48
+3,player/front_shoulder.png,1,1,32,32
+4,player/rear_shoulder.png,1,1,32,32
+5,player/arm.png,1,1,16,32
+6,player/catch_arm.png,1,1,32,32
+7,enemy/raidrone.png,2,1,64,64
+8,enemy/peckiller.png,1,1,80,32
+9,enemy/missile.png,1,1,32,16
+32,enemy/jumbo_raidrone.png,2,1,192,128
+33,enemy/desdragud.png,1,1,96,128
+34,enemy/desdragud_arm.png,1,1,64,32
+35,enemy/desdragud_shoulder.png,1,1,32,32
+36,enemy/desdragud_tail.png,1,1,32,32
